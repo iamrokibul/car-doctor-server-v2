@@ -32,7 +32,7 @@ async function run() {
 
 
 
-    
+
     // Send a ping to confirm a successful connection
     await client.db("admin").command({ ping: 1 });
     console.log("Pinged your deployment. You successfully connected to MongoDB!");
@@ -48,7 +48,7 @@ run().catch(console.log);
 
 
 app.get('/', (req, res) => {
-    res.send("Car Doctor Running...");
+    res.send("Car Doctor Running...!");
 });
 
 app.listen(port, () => {
